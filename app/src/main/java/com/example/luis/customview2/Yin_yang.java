@@ -120,12 +120,12 @@ public class Yin_yang extends View {
                 canvas.drawArc(rectF, segStartPoint, segment[i], true, paint);
 
                 radius= x/4f;
-                paint.setColor(color4);
+                paint.setColor(pColor2);
                 canvas.drawCircle(x/1.9f, y/4f , radius, paint);
 
 
                 radius= x/4f;
-                paint.setColor(color3);
+                paint.setColor(pColor1);
                 canvas.drawCircle(x/2.1f, y/1.33f , radius, paint);
 
                 segStartPoint += segment[i];
@@ -133,10 +133,10 @@ public class Yin_yang extends View {
 
             radius= x/15;
             paint.setColor(color3);
-            canvas.drawCircle(x/2f, y/5f , radius, paint);
+            canvas.drawCircle(x/1.9f, y/5f , radius, paint);
 
             paint.setColor(color4);
-            canvas.drawCircle(x/2, y/1.2f, radius, paint);
+            canvas.drawCircle(x/2.1f, y/1.2f, radius, paint);
 
 
 
