@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#9f2b2b"
+    tools:context="com.example.luis.customview2.MainActivity">
+
+
+
+    <com.example.luis.customview2.Yin_yang
+        android:layout_height="220dp"
+        android:layout_width="220dp"
+        custom:color1="@color/negro"
+        custom:color2="@color/blanco"
+        custom:color3="@color/negro"
+        custom:color4="@color/blanco"
+        android:id="@+id/yin"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+     />
+
+
+</LinearLayout>
