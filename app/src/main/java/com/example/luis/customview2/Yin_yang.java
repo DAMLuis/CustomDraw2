@@ -17,7 +17,6 @@ public class Yin_yang extends View {
     private int color3;
     private int color4;
     private Paint paint;
-    private float mPointerRadius = 2.0f;
     private float [] data= {50,50};
     private RectF rectF;
 
@@ -100,7 +99,7 @@ public class Yin_yang extends View {
             int endRight = endBottom;
             int x = getWidth();
             int y = getHeight();
-            int radius;
+            float radius;
 
             rectF = new RectF(left, top, endRight, endBottom);
 
@@ -120,9 +119,17 @@ public class Yin_yang extends View {
 
                 canvas.drawArc(rectF, segStartPoint, segment[i], true, paint);
 
+                radius= x/4f;
+                paint.setColor(color4);
+                canvas.drawCircle(x/1.9f, y/4f , radius, paint);
+
+
+                radius= x/4f;
+                paint.setColor(color3);
+                canvas.drawCircle(x/2.1f, y/1.33f , radius, paint);
+
                 segStartPoint += segment[i];
             }
-
 
             radius= x/15;
             paint.setColor(color3);
@@ -130,6 +137,11 @@ public class Yin_yang extends View {
 
             paint.setColor(color4);
             canvas.drawCircle(x/2, y/1.2f, radius, paint);
+
+
+
+
+
 
         }
 
